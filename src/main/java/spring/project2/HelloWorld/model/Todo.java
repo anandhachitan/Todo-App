@@ -19,8 +19,7 @@ public class Todo {
     @NotBlank
     String title;
 
-    @NotNull
-    @NotBlank
+
     String description;
     Boolean isCompleted;
 

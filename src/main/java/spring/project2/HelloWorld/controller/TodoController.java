@@ -52,7 +52,7 @@ public class TodoController {
     @PostMapping("/create")
     ResponseEntity<Todo> createTodo(@Valid @RequestBody Todo todo){
         log.info("Creating the Todo data.");
-        return new ResponseEntity<>(todoService.createUser(todo), HttpStatus.CREATED);
+        return new ResponseEntity<>(todoService.createUser(todo), HttpStatus.OK);
     }
 
     @PutMapping("/update")
